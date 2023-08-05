@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
     CommonModule,
     RouterModule.forRoot(APP_ROUTES),
   ],

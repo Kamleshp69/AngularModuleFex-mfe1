@@ -4,10 +4,7 @@ import { FlightsSearchComponent } from './flights/flights-search/flights-search.
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  },
+
   {
     path: 'flights/flights-search',
     component: FlightsSearchComponent
