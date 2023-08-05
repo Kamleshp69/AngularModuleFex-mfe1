@@ -1,0 +1,19 @@
+<div class="panel-container">
+  <app-split-panel [Panel]="splitPanels[0]">
+    <div slot="content1" style="height: 100%; width:100%; background-color: aqua;">
+      Panel 1
+    </div>
+    <div slot="content2">
+      <app-split-panel [Panel]="splitPanels[1]">
+        <div slot="content1" style="background-color: green;">
+          Panel 1
+        </div>
+        <div slot="content2">
+          <h2>Panel 2</h2>
+        </div>
+
+      </app-split-panel>
+    </div>
+
+  </app-split-panel>
+</div>

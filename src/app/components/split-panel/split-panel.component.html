@@ -1,0 +1,9 @@
+<div class="panel-container" [class]="Panel.direction">
+  <div [class.panel1-v]="Panel.direction === 'vertical'" [class.panel1-h]="Panel.direction === 'horizontal'" #panel1>
+      <ng-content select="[slot=content1]"></ng-content>
+    </div>
+    <div [class.splitter-h]="Panel.direction === 'vertical'" [class.splitter-v]="Panel.direction === 'horizontal'" (mousedown)="onMousedown($event)"></div>
+    <div [class.panel2-v]="Panel.direction === 'vertical'" [class.panel2-h]="Panel.direction === 'horizontal'" #panel2>
+      <ng-content select="[slot=content2]"></ng-content>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+
+.panel-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.vertical {
+    flex-direction: column;
+}
+.horizontal {
+    flex-direction: row;
+}
+
+.panel1-v {
+  width: 100%;
+  height: 50%;
+}
+.panel2-v {
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.panel1-h {
+  width: 50%;
+  height: 100%;
+}
+.panel2-h {
+  height: 100%;
+  flex: 1 1 auto;
+}
+.splitter-h {
+    height: 5px;
+    width: 100%;
+    background-color: darkgray;
+}
+.splitter-v {
+  width: 5px;
+  height: 100%;
+  background-color: darkgray;
+}
+
+.splitter-h:hover {
+    cursor: row-resize;
+}
+.splitter-v:hover {
+  cursor: col-resize;
+}
+
